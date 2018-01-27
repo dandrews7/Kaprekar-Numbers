@@ -22,6 +22,14 @@
  * @param n
  * @return <code>true</code> if <code>n</code> is a Kaprekar Number, 
  * <code>false</code> otherwise.
+ *
+ * Bug fixes by Daniel Andrews
+ * Fixed bug in line 41.  Previous version didn't have the (long) n squared.
+ * Fixed spelling of modulus
+ * Fixed the value of i, was previously zero, but that caused a divide by zero error.
+ * Fixed the log10 (square) in line 42.
+ *
+ *
  */
 int isKaprekar(int n) {
 
